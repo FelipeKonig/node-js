@@ -4,8 +4,8 @@ const readline = require('readline').createInterface({
 })
 
 readline.question('Qual a sua linguagem preferida?', (language) => {
-  corretAnswer = language.toLowerCase() === 'java' ?
-    console.log(`A minha linguagem preferida é: ${language}`) :
-    console.log(`Tu é um jumento`)
+  corretAnswer = language.toLowerCase() === 'java'
+    ? console.log(`A minha linguagem preferida é: ${language}`)
+    : console.log(`Tu é um jumento`)
   readline.close()
 })
